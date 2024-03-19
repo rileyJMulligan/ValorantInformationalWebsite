@@ -1,0 +1,286 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: FF6347;
+    color: black;
+    }
+    
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Move nav items to the left */
+}
+
+nav li {
+  margin-right: 35px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #FF6347;
+}
+
+/* Style the navigation buttons and dots */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+
+
+    
+    /* Hero section styles */
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin-top: 0;
+    color: #F9F9F9;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    color: #F9F9F9;
+  }
+  
+  #headVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+    
+    .cta {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.2s ease;
+    }
+    
+    .cta:hover {
+    background-color: #990000;
+    }
+    
+    /* Feature section styles */
+
+    video {
+        width: 100%;
+        height: auto;
+      }
+
+    .feature {
+    display: flex;
+    padding: 100px;
+    background-color: #F9F9F9;
+    }
+    
+    .feature-left {
+    flex: 1;
+    text-align: center;
+    }
+    
+    .feature-left img {
+    max-width: 100%;
+    }
+    
+    .feature-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .feature-right img {
+      max-width: 100%;
+      }
+    
+    .feature-text {
+    text-align: center;
+    }
+    
+    .feature h2 {
+    font-size: 48px;
+    margin-top: 0;
+    color: #333333;
+    }
+    
+    .feature-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333333;
+    }
+    
+    .feature-description {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #666666;
+    }
+    
+    /* Countdown section styles */
+.countdown-container {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.countdown-container h2 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.countdown-container p {
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+    
+    /* Footer styles */
+    footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    footer p {
+    margin: 0;
+    font-size: 18px;
+    }
+
+    @media only screen and (max-width: 767px) {
+
+      /* Body styles for mobile */
+      body {
+        font-size: 16px;
+      }
+    
+      /* Header styles for mobile */
+      header {
+        padding: 10px;
+      }
+    
+      h1 {
+        font-size: 24px;
+      }
+    
+      nav li {
+        font-size: 16px;
+        margin-left: 10px;
+      }
+    
+      /* Hero section styles for mobile */
+      .hero h2 {
+        font-size: 32px;
+      }
+    
+      .hero p {
+        font-size: 18px;
+      }
+    
+      /* Feature section styles for mobile */
+      .feature {
+        display: block;
+        padding: 50px;
+      }
+    
+      .feature-left img {
+        max-width: 80%;
+      }
+    
+      .feature-right {
+        display: none;
+      }
+    
+      .feature-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    
+      .feature-description {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    
+      /* Testimonials section styles for mobile */
+      .testimonials {
+        padding: 50px;
+      }
+    
+      .testimonials h2 {
+        font-size: 32px;
+      }
+    
+      blockquote {
+        font-size: 18px;
+      }
+    
+      /* Footer styles for mobile */
+      footer {
+        padding: 10px;
+      }
+    
+      footer p {
+        font-size: 16px;
+      }
+    
+    }

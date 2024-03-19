@@ -1,0 +1,204 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Move nav items to the left */
+}
+
+nav li {
+  margin-right: 35px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #FF6347;
+}
+
+/* Style the navigation buttons and dots */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.spacing{
+  padding: 50px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  
+  .weapons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 10%;
+    width: 80%;
+    overflow: auto;
+  }
+  
+  button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+  }
+  
+  button:hover {
+    background-color: #ffa292;
+    box-shadow: 0px 0px 10px grey;
+  }
+  
+  button:focus {
+    background-color: #FF6347;
+    outline: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(255, 0, 0, 0.4);
+    border-radius: 8px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+  }
+  
+  .card-header {
+    padding: 24px;
+    background-color: #FF6347;
+    color: #fff;
+  }
+  
+  .card-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .card-header p {
+    margin: 8px 0 0;
+    font-size: 16px;
+  }
+  
+  .card-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .card-details {
+    padding: 24px;
+    flex-grow: 1;
+  }
+  
+  .card-details ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .card-details li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  .card-details span {
+    font-weight: bold;
+  }
+
+   /* Footer styles for mobile */
+   footer {
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+
+  
+@media only screen and (max-width: 768px) {
+.container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+
+.card {
+    position: absolute;
+    left: 1000;
+}
+
+.weapons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 20%;
+    width: 80%;
+    overflow: auto;
+  }
+  
+}
+

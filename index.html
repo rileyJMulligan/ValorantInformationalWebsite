@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Valorant Landing Page</title>
+	<link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+	<header>
+		<h1>Valorant</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="agents.html">Agents</a></li>
+				<li><a href="maps.html">Maps</a></li>
+				<li><a href="weapons.html">Weapons</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+        <section class="hero">
+          <h2>Valorant</h2>
+          <p>A 5v5 character-based tactical shooter</p>
+          <a href="https://playvalorant.com/en-us/" class="cta">Play now</a>
+          <video autoplay muted loop id="headVideo">
+            <source src="images/valvideo.mp4" type="video/mp4">
+          </video>
+        </section>
+      </main>
+
+		<section class="features">
+			<div class="feature">
+				<div class="feature-left">
+					<iframe width="500" height = "300" src="https://www.youtube.com/embed/PlpqhZiumDM" title="SHATTERED // Episode 5: DIMENSION Cinematic - VALORANT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					<h2></h2>
+				</div>
+				<div class="feature-right">
+					<div class="feature-text">
+						<h3 class="feature-title">Explore the rich backstory of Valorant</h3>
+						<p class="feature-description">Discover the lore behind the game's agents and their unique abilities.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="feature">
+				<div class="feature-left">
+					<div class="feature-text">
+						<h3 class="feature-title">Experience thrilling and strategic gameplay</h3>
+						<p class="feature-description">Coordinate with your team to outsmart and outgun your opponents.</p>
+					</div>
+				</div>
+				<div class="feature-right">
+                    <video autoplay muted loop id="tacgun">
+                        <source src="images/tacgun.mp4" type="video/mp4">
+                      </video>
+					
+				</div>
+			</div>
+
+			<div class="feature">
+				<div class="feature-left">
+					<img src="images/agents.png" alt="Agents Feature Image">
+				</div>
+				<div class="feature-right">
+					<div class="feature-text">
+						<h3 class="feature-title">Choose from a diverse cast of agents</h3>
+						<p class="feature-description">Each agent has a unique set of abilities that can turn the tide of battle.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="feature">
+				
+				<div class="feature-left">
+					<div class="feature-text">
+						<h3 class="feature-title">Fight on a variety of dynamic maps</h3>
+						<p class="feature-description">Each map offers its own set of challenges and opportunities for tactical play.</p>
+					</div>
+				</div>
+				<div class="feature-right">
+					<img src="images/maps.png" alt="Maps Feature Image">
+				</div>
+			</div>
+		</section>
+
+		<section class="countdown-container">
+			<h2>Time Until Next Act</h2>
+			<p id="countdown">xx</p>
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; <span id="currentYear"></span> Riley Mulligan. All rights reserved.</p>
+	</footer>
+	<script src="js/home.js"></script>
+</body>
+</html>

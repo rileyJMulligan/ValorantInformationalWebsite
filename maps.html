@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/maps.css">
+    <link rel="stylesheet" href="css/home.css">
+  </head>
+  <body>
+    <header>
+		<h1>Valorant</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="agents.html">Agents</a></li>
+				<li><a href="maps.html">Maps</a></li>
+				<li><a href="weapons.html">Weapons</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <div class="container">
+      <h1>  </h1>
+      <div class="details-container">
+        <p id="displayName"></p>
+        <p id="coordinates"></p>
+
+        <img id="listviewicon">
+      </div>
+      <div class="map-container">
+        <img id="displayIcon" alt="This map does not have an in-game map view.">
+        <img id="splash">
+      </div>
+      <div class="details-container">
+        <p id="displayName"></p>
+        <img id="listviewicon">
+      </div>
+      <div class="button-container">
+        <button id="previousBtn">Previous</button>
+        <div id="dots-container"></div>
+        <button id="nextBtn">Next</button>
+      </div>
+      
+      </div>
+    </div>
+    <footer>
+      <p>&copy; <span id="currentYear"></span> Riley Mulligan. All rights reserved.</p>
+    </footer>
+    <script src="js/map.js"></script>
+  </body>
+</html>

@@ -1,0 +1,328 @@
+/* Set flex display */
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+/* Set background color */
+body {
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Style the header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start; /* Move nav items to the left */
+}
+
+nav li {
+  margin-right: 35px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #FF6347;
+}
+
+/* Style the navigation buttons and dots */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#prev-btn {
+  background-color: #FF6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-right: auto;
+}
+
+#prev-btn:hover {
+  background-color: #FF4500;
+}
+
+#next-btn {
+  background-color: #FF6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-left: auto;
+}
+
+#next-btn:hover {
+  background-color: #FF4500;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #f36363;
+}
+
+
+.current {
+  background-color: #FF6347;
+}
+
+/* Agent Info Container */
+.agent-info-container {
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.agent-info-container h2 {
+  font-size: 4rem;
+  margin: 0;
+  text-align: center;
+}
+
+.agent-info-container img {
+  width: 80%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.agent-info-container p {
+  text-align: center;
+  margin: 5vw 15vw;
+  font-size: 1.5rem;
+  color: #ff2600;
+  font-weight: bolder ;
+}
+
+/* Extra Info */
+
+
+.extra-info {
+  width: 50%;
+  height: 100%;
+  background: #FF6347;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 1;
+}
+
+
+
+.extra-info p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  text-align: center;
+}
+
+#textblock{
+  background-color: #FF6347;
+  color: white;
+  font-weight: bolder;
+  padding: 30px;
+}
+
+.extra-info img {
+  max-width: 100%;
+  width: 120px; /* Increased the width */
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ability Container */
+.ability-container {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20vh;
+  padding-left: 20px;
+  box-sizing: border-box;
+  background-repeat: repeat;
+  background-size: contain;
+  margin-bottom: 300px;
+}
+
+/* Ability Card Style */
+.ability-card {
+  background-color: #FF6347;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ability-card img {
+  max-width: 100%;
+  height: auto;
+  max-height: 120px; /* Increased the max-height */
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ability-card h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+}
+
+.ability-card p {
+  font-size: 1.5rem;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+
+}
+
+
+/* Portrait */
+.portrait {
+  height: 100%;
+  width: 50%;
+  float: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Added this line */
+}
+
+
+.portrait img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.clearfix {
+  clear: both;
+}
+
+ /* Footer styles for mobile */
+ footer {
+  padding: 10px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+  display: block;
+  }
+  header {
+  flex-direction: column;
+  text-align: center;
+  padding-top: 30px;
+  }
+  nav {
+  display: none;
+  }
+  .agent-info-container {
+  width: 100%;
+  float: none;
+  height: auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  }
+  .extra-info {
+  width: 100%;
+  float: none;
+  height: auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  }
+  .ability-container {
+  width: 100%;
+  float: none;
+  height: auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  margin-bottom: 0;
+  }
+  .portrait {
+  display: none;
+  }
+}
